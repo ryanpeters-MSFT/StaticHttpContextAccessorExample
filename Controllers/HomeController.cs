@@ -10,4 +10,11 @@ public class HomeController : Controller
 
         return View();
     }
+
+    public IActionResult Privacy()
+    {
+        ActiveUser.GetActiveUserInfo();
+
+        return View();
+    }
 }
